@@ -1,6 +1,6 @@
 # List of Excercises
 
-1. [Fibonacci sequence](#Excercise-1:-Fibonacci-sequence)
+1. [Fibonacci sequence](#Excercise-1-Fibonacci-sequence)
 
 
 ## Excercise 1: Fibonacci sequence 
