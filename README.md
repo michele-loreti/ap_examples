@@ -31,4 +31,4 @@ git pull
 ```
 
 ### Downloading excerices as an archive
-All the code is available as a zip archive at the following [link](https://github.com/michele-loreti/ap_examples/archive/master.zip)..
+All the code is available as a zip archive at the following [link](https://github.com/michele-loreti/ap_examples/archive/master.zip).
