@@ -1,6 +1,9 @@
 # List of Excercises
 
 1. [Fibonacci sequence](#Excercise-1-Fibonacci-sequence)
+2. [Greatest common divisor](#Excercise-2-Greatest-common-divisor)
+3. [Primality test](#Excercise-3-Primality-test)
+4. [Prime factors](#Excercise-4-Prime-factors)
 
 
 ## Excercise 1: Fibonacci sequence 
