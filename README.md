@@ -4,7 +4,7 @@ This repository contains the solutions of the lecture
 "Advanced Programming" ("Programmazione Avanzata") held at [Università di Camerino](http://www.unicam.it), 
 [Computer Science Degree](http://didattica.cs.unicam.it/doku.php).
 
-The full list of excercises is available [here](Excercises.md).
+The full list of excercises is available [here](https://github.com/michele-loreti/ap_examples/blob/master/Exercises.md).
 
 ## Download code.
 
