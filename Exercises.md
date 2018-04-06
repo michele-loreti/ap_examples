@@ -27,11 +27,10 @@ Write a function `primeFactors` that received an integer `n` computes the list o
 ([Solution](https://github.com/michele-loreti/ap_examples/tree/master/fsharp/pnumbers/pnumbers))
 
 ## Excerice 5: Interpreter of a Small Calculator.
-Develop an interepreter of a Small Calculator. This calculator has: 
-* 10 keys corresponding to the digits (`0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`);
-* 4 keys for the arythmetic operations (`+`,`-`,`*`,`/`);
-* `.`;
-* `=`.
+Develop an interepreter of a Small Calculator. This calculator has the following keys: 
+* digits: `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`);
+* operations: `+`,`-`,`*`,`/`;
+* commands: `.`, `=`.
 
 ([Solution in F#](https://github.com/michele-loreti/ap_examples/tree/master/fsharp/pnumbers/pnumbers))
 ([Solution in Java](https://github.com/michele-loreti/ap_examples/tree/master/fsharp/pnumbers/pnumbers))
