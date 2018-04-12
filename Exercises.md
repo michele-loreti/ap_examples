@@ -29,7 +29,7 @@ Write a function `primeFactors` that received an integer `n` computes the list o
 
 ## Excerice 5: Interpreter of a Small Calculator.
 Develop an interepreter of a Small Calculator. This calculator has the following keys: 
-* digits: `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`);
+* digits: `0`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`;
 * operations: `+`,`-`,`*`,`/`;
 * commands: `.`, `=`.
 
