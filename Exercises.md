@@ -1,10 +1,10 @@
 # List of Excercises
 
-1. [Fibonacci sequence](#Excercise-1-Fibonacci-sequence)
-2. [Greatest common divisor](#Excercise-2-Greatest-common-divisor)
-3. [Primality test](#Excercise-3-Primality-test)
-4. [Prime factors](#Excercise-4-Prime-factors)
-5. [Small Calculator Interpreter](#Excerice-5-Interpreter-of-a-Small-Calculator)
+1. [Fibonacci sequence](#excercise-1-fibonacci-sequence)
+2. [Greatest common divisor](#excercise-2-greatest-common-divisor)
+3. [Primality test](#excercise-3-Primality-test)
+4. [Prime factors](#excercise-4-Prime-factors)
+5. [Small Calculator Interpreter](#excerice-5-interpreter-of-a-small-calculator)
 
 
 ## Excercise 1: Fibonacci sequence 
