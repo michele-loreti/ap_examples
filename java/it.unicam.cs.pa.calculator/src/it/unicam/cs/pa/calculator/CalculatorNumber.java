@@ -17,8 +17,14 @@ public class CalculatorNumber {
 
 	public CalculatorNumber(double value) {
 		super();
-		this.commaFlag = true;
-		this.value = ""+value;
+		
+		if (Math.floor(value)==Math.ceil(value)) {
+			this.commaFlag = false;
+			this.value = ""+((int) value);
+		} else {
+			this.commaFlag = true;
+			this.value = ""+value;
+		}
 	}
 	
 	public void addDigit(Digit d) {
@@ -37,7 +43,11 @@ public class CalculatorNumber {
 			return Integer.parseInt(this.value);
 		}
 	}
-
+	
+	public double getValue() {
+		return Double.parseDouble(this.value);
+	}
+	
 	public void setCommaFlag() {
 		if (!this.commaFlag) {
 			this.commaFlag = true;
@@ -45,5 +55,7 @@ public class CalculatorNumber {
 		}
 	}
 	
-	
+	public static CalculatorNumber sum( CalculatorNumber v1 , CalculatorNumber v2 ) {
+		return new CalculatorNumber(v1.getValue()+v2.getValue());
+	}
 }

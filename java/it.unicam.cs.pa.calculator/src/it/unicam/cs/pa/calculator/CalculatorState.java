@@ -24,6 +24,7 @@ public class CalculatorState {
 	public void addDigit(Digit d) {
 		if (this.operationFlag) {
 			this.view = new CalculatorNumber();
+			this.operationFlag = false;
 		}
 		this.view.addDigit(d);
 	}
