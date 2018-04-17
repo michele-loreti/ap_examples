@@ -1,42 +1,48 @@
 package it.unicam.cs.pa.calculator;
 
 public class CalculatorNumber {
-
-	private int value;
-	private int digitsAfterComma;
+	
+	private String value;
 	private boolean commaFlag;
 	
 	public CalculatorNumber() {
-		this(0, 0);
+		this(0);
 	}
-
-	public CalculatorNumber(int value, int digitsAfterComma) {
+	
+	public CalculatorNumber(int value) {
 		super();
 		this.commaFlag = false;
-		this.value = value;
-		this.digitsAfterComma = digitsAfterComma;
+		this.value = ""+value;
 	}
 
+	public CalculatorNumber(double value) {
+		super();
+		this.commaFlag = true;
+		this.value = ""+value;
+	}
 	
 	public void addDigit(Digit d) {
-		int v = d.valueOf();
-		assert((v>=0)&&(v<=9));
-		this.value = this.value*10 + v;
-		if (this.commaFlag) {
-			this.digitsAfterComma += 1; 
+		if (this.value.equals("0")) {
+			this.value = d.value()+"";
+		} else {
+			this.value += d.value();
 		}
+		
 	}
 
 	public Number getNumber() {
 		if (this.commaFlag) {
-			return this.value*Math.pow(10,-digitsAfterComma);
+			return Double.parseDouble(this.value);
 		} else {
-			return this.value;
+			return Integer.parseInt(this.value);
 		}
 	}
 
 	public void setCommaFlag() {
-		this.commaFlag = true;
+		if (!this.commaFlag) {
+			this.commaFlag = true;
+			this.value += ".";
+		}
 	}
 	
 	
