@@ -17,6 +17,29 @@ public class CalculatorState {
 	private BiFunction<CalculatorNumber,CalculatorNumber,CalculatorNumber> operation = null;
 	private CalculatorNumber registry = new CalculatorNumber();
 	
+	
+	public CalculatorState(CalculatorNumber view, boolean operationFlag,
+			BiFunction<CalculatorNumber, CalculatorNumber, CalculatorNumber> operation, CalculatorNumber registry) {
+		super();
+		this.view = view;
+		this.operationFlag = operationFlag;
+		this.operation = operation;
+		this.registry = registry;
+	}
+	
+	public CalculatorState(CalculatorNumber view, CalculatorNumber registry) {
+		this(view,false,null,registry);
+	}
+	
+	public CalculatorState() {
+		this(new CalculatorNumber(),new CalculatorNumber());
+	}
+	
+
+	public CalculatorState(double d) {
+		this( new CalculatorNumber(d),new CalculatorNumber());
+	}
+
 	public Number getView() {
 		return this.view.getNumber();
 	}
@@ -33,18 +56,23 @@ public class CalculatorState {
 		this.view.setCommaFlag();
 	}
 	
-	public void applyFunction() {
-		if (this.operation != null) {
-			this.view = this.operation.apply(this.view,this.registry);
-			this.operation = null;
-		}
-	}
-
 	public void setOperation(BiFunction<CalculatorNumber, CalculatorNumber, CalculatorNumber> operation) {
 		this.operationFlag = true;
+		this.applyOperation();
 		this.operation = operation;
 		this.registry = this.view;
 	}
 	
+	public void applyOperation() {
+		if (this.operation != null) {
+			this.view = this.operation.apply(this.registry,this.view);
+			this.operation = null;
+		}
+	}
+
+	public Number getRegistry() {
+		return this.registry.getNumber();
+	}
+
 
 }

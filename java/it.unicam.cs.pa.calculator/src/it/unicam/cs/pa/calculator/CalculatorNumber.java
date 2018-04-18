@@ -58,4 +58,11 @@ public class CalculatorNumber {
 	public static CalculatorNumber sum( CalculatorNumber v1 , CalculatorNumber v2 ) {
 		return new CalculatorNumber(v1.getValue()+v2.getValue());
 	}
+
+	@Override
+	public String toString() {
+		return this.value;
+	}
+	
+	
 }

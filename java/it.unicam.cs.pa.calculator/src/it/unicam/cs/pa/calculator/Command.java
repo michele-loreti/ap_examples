@@ -34,4 +34,20 @@ public interface Command {
 	static Command getOperationCommand(BiFunction<CalculatorNumber, CalculatorNumber, CalculatorNumber> operation) {
 		return new OperationCommand( operation );
 	}
+
+	static Command getSumCommand() {
+		return getOperationCommand(Command.SUM);
+	}
+
+	static Command getDifCommand() {
+		return getOperationCommand(Command.DIF);
+	}
+
+	static Command getMulCommand() {
+		return getOperationCommand(Command.MUL);
+	}
+
+	static Command getDivCommand() {
+		return getOperationCommand(Command.DIV);
+	}
 }

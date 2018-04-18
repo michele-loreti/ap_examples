@@ -13,4 +13,8 @@ public class DigitCommand implements Command {
 		state.addDigit(this.d);
 		return state;
 	}
+
+	public Digit getDigit() {
+		return d;
+	}
 }
