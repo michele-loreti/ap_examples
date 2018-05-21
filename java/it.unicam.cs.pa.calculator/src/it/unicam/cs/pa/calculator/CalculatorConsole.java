@@ -21,7 +21,7 @@ public class CalculatorConsole {
 		while (flag) {
 			String program = JOptionPane.showInputDialog("Digit program:");
 			if ((program != null)&&(!program.isEmpty())) {
-				exec( CalculatorParser.parse(program) );
+				exec( CalculatorParser.SIMPLE_PARSER.parse(program) );
 			} else {
 				flag = false;
 			}

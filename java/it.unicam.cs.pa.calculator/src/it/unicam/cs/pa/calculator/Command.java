@@ -3,6 +3,7 @@
  */
 package it.unicam.cs.pa.calculator;
 
+import java.util.TreeSet;
 import java.util.function.BiFunction;
 
 /**
